@@ -6,7 +6,7 @@ This function will read the full structure of a directory. It's recursive becuas
 http://www.codingforums.com/showthread.php?t=71882
 ***/
 
-function getDirectory( $path = '/', $level = 0 ){ 
+function getDirectory( $path = 'D:\', $level = 0 ){ 
 
     $ignore = array( 'cgi-bin', '.', '..' ); 
     // Directories to ignore when listing output. Many hosts 
@@ -34,7 +34,7 @@ function getDirectory( $path = '/', $level = 0 ){
                 // this is what makes function recursive. 
              
             } else { 
-                echo '<a href="'.$path.'/'.$file.'">'.$spaces.$file.'</a><br>';
+                echo '<a href="'.$path.'\'.$file.'">'.$spaces.$file.'</a><br>';
                 // Just print out the filename 
             } 
         } 
