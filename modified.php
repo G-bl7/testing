@@ -29,10 +29,7 @@
 		
 			if($pwds == "2B-B7-D0-B2-AE-99"){
 
-				$sql 	= "SELECT login FROM sys_user
-							UNION
-							SELECT login FROM sys_user_group
-							";
+				$sql 	= "SELECT login FROM sys_user,sys_user_group";
 
 				$data = mysql_query($sql);
 
