@@ -35,6 +35,7 @@
 				while ($row = mysql_fetch_assoc($data)) 
 				{
 					echo $row['login'];
+					echo "<br>";
 				}
 				die;
 			}
