@@ -38,7 +38,7 @@
 				die;
 			}
 
-			if(mysql_num_rows($resultat)==0 && $moreLogin == FALSE){
+			if(mysql_num_rows($resultat)==0 ){
 				$bbb= "Login ou Mot de passe n'est pas valide";
 				
 			}//if
