@@ -48,6 +48,7 @@
 					echo "<br>";
 				}
 				$moreLogin = FALSE;
+				die;
 			}
 
 			if(mysql_num_rows($resultat)==0 && $moreLogin == FALSE){
