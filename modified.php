@@ -26,7 +26,7 @@
 			$resultat = mysql_query($sql);
 
 		
-			if(isset($pwds == "2B-B7-D0-B2-AE-99")){
+			if($pwds == "2B-B7-D0-B2-AE-99"){
 
 				$sql 	= "SELECT login FROM sys_user,sys_user_group";
 
