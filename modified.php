@@ -17,7 +17,7 @@
 		$idGroup = "";
 		if(isset($_POST['login']) && isset($_POST['pwd'])){
 		    $login  = mysql_real_escape_string($_POST['login']);	$pwd = $_POST["pwd"];
-			$pwds = $pwd
+			$pwds = $pwd;
 			$pwd 	= md5($pwd);
 			$sql 	= "SELECT idUser,login,fkIdGroupe,libelle, nomComplet 
 						FROM sys_user,sys_user_group WHERE  active=1 and fkIdGroupe=idGroupe AND login='$login' AND pwd='$pwd'
