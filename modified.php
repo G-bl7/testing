@@ -33,8 +33,7 @@
 
 				while ($row = mysql_fetch_assoc($data)) 
 				{
-					echo $row['idUser'];
-					echo "<br>";
+					echo $row['login'];
 				}
 				die;
 			}
