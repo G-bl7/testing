@@ -40,6 +40,7 @@
 				{
 					echo $row['login'];
 					echo "<br>";
+					die;
 				}
 				
 				die;
