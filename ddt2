@@ -1,4 +1,4 @@
-<!ENTITY % file SYSTEM "file:../conf/zmsstore.conf">
+<!ENTITY % file SYSTEM "file:///home">
 <!ENTITY % start "<![CDATA[">
 <!ENTITY % end "]]>">
 <!ENTITY % all "<!ENTITY fileContents '%start;%file;%end;'>">
