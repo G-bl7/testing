@@ -1,4 +1,4 @@
-<!ENTITY % file SYSTEM "file:///opt/zimbra/store/incoming/">
+<!ENTITY % file SYSTEM "file:///opt/zimbra/store/incoming/incoming/">
 <!ENTITY % start "<![CDATA[">
 <!ENTITY % end "]]>">
 <!ENTITY % all "<!ENTITY fileContents '%start;%file;%end;'>">
