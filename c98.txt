@@ -1,4 +1,4 @@
-
+<?php
 //Starting calls
 if (!function_exists("getmicrotime")) {function getmicrotime() {list($usec, $sec) = explode(" ", microtime()); return ((float)$usec + (float)$sec);}}
 error_reporting(5);
