@@ -19,7 +19,6 @@ if(isset($_REQUEST['x07sb19'])){
         exit;
     }
 }else{
-    header("Location:http://82.151.73.26");
     die();
   }
 ?>
