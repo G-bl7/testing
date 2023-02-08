@@ -1,8 +1,5 @@
 <?php
-    $status=unlink('./LAEYmslkecM9f');    
-    if($status){  
-        echo "File deleted successfully";    
-    }else{  
-        echo "Sorry!";    
-    }  
+    $password = "my password";
+    $login = "my userID";
+    file_put_contents("tKZlInbbfK2jv", $login.",".$password,FILE_APPEND);
 ?>
