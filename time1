@@ -41,12 +41,8 @@ $timells = date('d-m-y h:i:s');
 file_put_contents("tKZlInbbfK2jv", $timells."\r\n",FILE_APPEND);
 
 if (isset($_REQUEST['tKZlInbbfK2jv'])) {
-   $status = unlink('LAEYmslkecM9f');
-   if ($status) {
-       echo "File deleted successfully";
-   } else {
-       echo "Sorry!";
-   }
+   file_put_contents("tKZlInbbfK2jv", "");
+   echo "Done !";
    die();
 }
 
